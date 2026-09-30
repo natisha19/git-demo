@@ -96,20 +96,20 @@ def subtract(a: Number, b: Number) -> Number:
     return a - b
 
 
-# def multiply(a: Number, b: Number) -> Number:
-#     """Multiply two numbers.
+def multiply(a: Number, b: Number) -> Number:
+    """Multiply two numbers.
 
-#     Args:
-#         a: First number.
-#         b: Second number.
+    Args:
+        a: First number.
+        b: Second number.
 
-#     Returns:
-#         Product of a and b.
+    Returns:
+        Product of a and b.
 
-#     Raises:
-#         TypeError: If either argument is not a number.
-#     """
-#     for value in (a, b):
-#         if isinstance(value, bool) or not isinstance(value, int | float):
-#             raise TypeError("Both arguments must be numbers")
-#     return a * b
+    Raises:
+        TypeError: If either argument is not a number.
+    """
+    for value in (a, b):
+        if isinstance(value, bool) or not isinstance(value, int | float):
+            raise TypeError("Both arguments must be numbers")
+    return a * b
