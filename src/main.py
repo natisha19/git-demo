@@ -22,6 +22,8 @@ def main() -> None:
 
     print(Fore.MAGENTA + "\n Ready to start learning Git and GitHub Actions!")
 
+    print(Fore.MAGENTA + "\n Hello!")
+
 
 if __name__ == "__main__":
     main()
