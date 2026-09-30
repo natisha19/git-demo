@@ -9,7 +9,7 @@ from src.utils import (
     calculate_age,
     format_date,
     greet,
-    # multiply,
+    multiply,
     subtract,
 )
 
@@ -86,21 +86,21 @@ class TestSubtract:
         assert subtract(0, 5) == -5
 
 
-# class TestMultiply:
-#     """Tests for multiply()."""
+class TestMultiply:
+    """Tests for multiply()."""
 
-#     def test_multiplies_two_numbers_correctly(self):
-#         assert multiply(2, 3) == 6
-#         assert multiply(-2, 4) == -8
-#         assert multiply(0, 5) == 0
+    def test_multiplies_two_numbers_correctly(self):
+        assert multiply(2, 3) == 6
+        assert multiply(-2, 4) == -8
+        assert multiply(0, 5) == 0
 
-#     def test_multiplies_floats(self):
-#         assert multiply(1.5, 2) == 3.0
+    def test_multiplies_floats(self):
+        assert multiply(1.5, 2) == 3.0
 
-#     def test_raises_for_non_number_input(self):
-#         with pytest.raises(TypeError, match="Both arguments must be numbers"):
-#             multiply("2", 3)
+    def test_raises_for_non_number_input(self):
+        with pytest.raises(TypeError, match="Both arguments must be numbers"):
+            multiply("2", 3)
 
-#     def test_raises_for_second_argument_non_number(self):
-#         with pytest.raises(TypeError, match="Both arguments must be numbers"):
-#             multiply(2, None)
+    def test_raises_for_second_argument_non_number(self):
+        with pytest.raises(TypeError, match="Both arguments must be numbers"):
+            multiply(2, None)
